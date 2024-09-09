@@ -1,2 +1,2 @@
-# WAD_RiikaSeeba
+# WAD_Project
 For Web Application Development course
