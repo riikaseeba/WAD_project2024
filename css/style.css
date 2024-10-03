@@ -1,0 +1,147 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body{
+    min-height: 100vh;
+    margin: 0;
+    /*background: url('../img/background.png') no-repeat;*/
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 10%;
+    background-color: rgb(87, 125, 80);
+}
+
+#logo {             /* ID Selector (#)*/
+    cursor: pointer;
+    order: 3;
+    margin-left: auto;
+}
+
+
+
+.navbar ul {
+    list-style-type: none;
+    background-color: rgb(87, 125, 80);
+    overflow: hidden;
+    padding-left: 0;
+}
+
+.navbar a{
+    color: white;
+    text-decoration: none;
+    padding: 20px;
+    display: block;
+    text-align: center;
+    font-weight: bold;
+    font-size: 25px;
+}
+.navbar a:hover{
+    background-color: rgb(134, 167, 128);
+    color: black;
+}
+.navbar li{
+    float: left;
+}
+
+.navbar li + li {           /*Adjacent Sibling Selector (+)*/
+    margin-left: 10px;
+}
+
+/*For index.html*/
+
+main {
+    justify-content: center;
+    align-items: flex-start;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#post02 , #post03{
+    width: 540px;       /*So that without a picture post could look as same witdh size as other posts that have pictures.*/
+}
+
+.post {
+    border: 0px; /* Add border */
+    border-radius: 30px; /* Rounded corners */
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(181, 216, 175);
+    width: 300px; /* Control fieldset width */
+}
+
+.post .posthead h1 {
+    font-size: 20px;
+    color: black;
+    margin-bottom: 10px;
+    margin-left: 150px;
+}
+
+.post .posthead img {
+    margin-bottom: 10px;
+    margin-right: 150px;
+}
+.post > img {               /*Child Selector (>)*/
+    border-radius: 10px;
+}
+
+.post .postimg {
+    width: 100%; /* Ensure image takes full width */
+    border-radius: 10px;
+}
+
+.posthead ~ .postcap{       /*General Sibling Selector (~)*/
+    color: black;
+    margin-top: 10px;
+    font-size: 16px;
+    font-weight: 350;
+}
+
+.post.likeIcon {
+    margin-top: 10px;
+    font-size: 20px;
+    cursor: pointer;
+
+}
+
+footer {
+    display: block;
+    clear: both;
+    background-color: rgb(87, 125, 80);
+    text-align: center;
+    padding: 25px;
+
+    font-family: sans-serif;
+    color: #fff;
+}
+
+/* Media queries for mobile devices */
+@media screen and (max-width: 800px) {
+    header{
+        flex-direction: column;
+        align-items: center;  
+    }
+    .navbar {
+        display: flex;
+    }
+    footer {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+
+
