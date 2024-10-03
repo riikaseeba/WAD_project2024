@@ -13,21 +13,24 @@ body{
     background-position: center;
     display: flex;
     flex-direction: column;
+    justify-content: flex-start;
 }
 
 header{
     display: flex;
-    justify-content: flex-end;
+    justify-content: space-between;
     align-items: center;
     padding: 30px 10%;
     background-color: rgb(87, 125, 80);
 }
 
-.logo {
+#logo {             /* ID Selector (#)*/
     cursor: pointer;
     order: 3;
     margin-left: auto;
 }
+
+
 
 .navbar ul {
     list-style-type: none;
@@ -53,14 +56,23 @@ header{
     float: left;
 }
 
+.navbar li + li {           /*Adjacent Sibling Selector (+)*/
+    margin-left: 10px;
+}
+
 /*For index.html*/
 
 main {
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
     margin-left: auto;
     margin-right: auto;
 }
+
+#post02 , #post03{
+    width: 540px;       /*So that without a picture post could look as same witdh size as other posts that have pictures.*/
+}
+
 .post {
     border: 0px; /* Add border */
     border-radius: 30px; /* Rounded corners */
@@ -72,14 +84,18 @@ main {
 }
 
 .post .posthead h1 {
-    font-size: 25px;
+    font-size: 20px;
     color: black;
     margin-bottom: 10px;
     margin-left: 150px;
 }
+
 .post .posthead img {
     margin-bottom: 10px;
     margin-right: 150px;
+}
+.post > img {               /*Child Selector (>)*/
+    border-radius: 10px;
 }
 
 .post .postimg {
@@ -87,10 +103,10 @@ main {
     border-radius: 10px;
 }
 
-.post .postcap {
+.posthead ~ .postcap{       /*General Sibling Selector (~)*/
+    color: black;
     margin-top: 10px;
     font-size: 16px;
-    color: black;
     font-weight: 350;
 }
 
@@ -112,6 +128,20 @@ footer {
     color: #fff;
 }
 
+/* Media queries for mobile devices */
+@media screen and (max-width: 800px) {
+    header{
+        flex-direction: column;
+        align-items: center;  
+    }
+    .navbar {
+        display: flex;
+    }
+    footer {
+        flex-direction: column;
+        align-items: center;
+    }
+}
 
 
 
