@@ -1,0 +1,91 @@
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Keha täiskõrgus */
+    background-size: cover;
+    background-position: center;
+}
+
+main {
+    flex: 1; /* See muudab sisu paindlikuks ja surub jaluse põhja */
+    justify-content: center;
+    align-items: flex-start;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.container { /*class selector*/
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* ID selectors*/
+/* keskmise lisatud osa css (erinevus home page-st)*/
+#login {
+    background-color: #ddd;
+    padding: 20px;
+    width: 300px;
+    margin: 100px auto; /* Keskele paigutatud */
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+/* child selector */
+#login > form {
+    padding: 10px 0;
+}
+
+/* Adjacent sibling selector */
+#login label + input {
+    margin-top: 10px;
+}
+
+/* General sibling selector */
+h1 ~ p {
+    color: black;
+    font-size: 17px;
+}
+
+/* Pseudo-element for link hover */
+#login a:hover {
+    text-decoration: underline;
+}
+
+
+#login input[type="text"], #login input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* button */
+#login input[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    background-color: #2c3e50; /* Tumesinine nupp */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+#login input[type="submit"]:hover {
+    background-color: #34495e;
+}
+
+#login p {
+    margin-top: 10px;
+}
+
+#login p a {
+    color: #3498db; /* Sinine link */
+}
+
+#login p a:hover {
+    text-decoration: underline;
+}
+

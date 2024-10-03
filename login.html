@@ -3,8 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>WAD2024</title>
+    <title>Log In</title>
     
+    
+    <link rel="stylesheet" type="text/css" href="css/login.css">
     <link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 
@@ -20,25 +22,36 @@
     </header>
     <br>
     <main>
-        <!--Siia tuleb login sisu-->
+        <section id="login">
+    
+            <h1>Welcome to PostIt</h1>
+            <p><a href="index.html">Create an account</a></p>
+            <p>or</p>
+            <p>Please log in</p>
 
+            <form action="index.html" method="GET">
+                <label for="email">Email</label>
+                <input type="text" id="email" name="email" placeholder="Email" required>
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password" placeholder="Password" required>
+                <input type="submit" value="Log in">
+            </form>
 
+            <p><a href="index.html">Forget password</a></p>
 
-
-
-
+        </section>
 
     </main>
     <br>
 
     <footer>
-        Author: <!--Selle veebilehe autori nimi-->
+        Author: Kärt Trinity Sillaots
         <br>
         <p>
             &lt; &copy; copyright reserved &gt;
         </p>
         <p>
-            <small><a href="mailto:sinunimi@ut.ee"><!--Selle veebilehe autori email--></a></small>
+            <small><a href="mailto:kart.trinity.sillaots@ut.ee">kart.trinity.sillaots@ut.ee</a></small>
         </p>
         <p>
             <a href="#">Back to top</a>
