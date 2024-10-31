@@ -1,0 +1,59 @@
+{
+    "comments": [
+    "date: Stores the date of each post.",
+    "author: Stores the author's name.",
+    "profileImage: Contains the path to the author's profile image.",
+    "postImage: Contains the path to the main image used in the post, or null if there’s no image.",
+    "title: Optional title for the post, or null if the post has no title.",
+    "content: The main content or description of the post.",
+    "likes: Initialized to 0 but can be updated later as the post receives likes."
+  ],
+    "posts": [
+      {
+        "date": "Oct 1, 2024",  
+        "author": "Riika Seeba",
+        "profileImage": "img/Logo.png",
+        "postImage": "img/food.jpg",
+        "title": null,
+        "content": "Went to my favorite restaurant. They served (as always) the best food in town.",
+        "likes": 0
+      },
+      {
+        "date": "Sept 21, 2024",
+        "author": "Riika Seeba",
+        "profileImage": "img/Logo.png",
+        "postImage": null,
+        "title": "Exciting Cultural Event in Autumnal Tallinn",
+        "content": "This autumn, Tallinn hosts several fascinating cultural events that attract both locals and tourists. A standout is the Tallinn Light Festival, where the streets of the Old Town are filled with mesmerizing light installations.",
+        "likes": 0
+      },
+      {
+        "date": "Sept 10, 2024",
+        "author": "Riika Seeba",
+        "profileImage": "img/Logo.png",
+        "postImage": null,
+        "title": "Updates at the University of Tartu Library",
+        "content": "The University of Tartu Library has undergone significant renovations, offering even more modern spaces for students and visitors. The spacious reading rooms and new digital resources make studying more convenient and productive.",
+        "likes": 0
+      },
+      {
+        "date": "Aug 26, 2024",
+        "author": "Riika Seeba",
+        "profileImage": "img/Logo.png",
+        "postImage": "img/post04.jpg",
+        "title": null,
+        "content": "Tallinn Old Town - A UNESCO World Heritage Site",
+        "likes": 0
+      },
+      {
+        "date": "Aug 20, 2024",
+        "author": "Riika Seeba",
+        "profileImage": "img/Logo.png",
+        "postImage": "img/post05.jpg",
+        "title": null,
+        "content": "Pärnu Beach - Estonia's Summer Capital",
+        "likes": 0
+      }
+    ]
+  }
+  
