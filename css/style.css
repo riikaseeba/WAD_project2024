@@ -69,9 +69,6 @@ main {
     margin-right: auto;
 }
 
-#post02 , #post03{
-    width: 540px;       /*So that without a picture post could look as same witdh size as other posts that have pictures.*/
-}
 
 .post {
     border: 0px; /* Add border */
@@ -81,6 +78,7 @@ main {
     flex-direction: column;
     background-color: rgb(181, 216, 175);
     width: 300px; /* Control fieldset width */
+    width: 540px;
 }
 
 .post .posthead h1 {

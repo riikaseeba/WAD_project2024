@@ -6,6 +6,7 @@ fetch('json/describePost.json')  //allows us to make HTTP requests (like getting
       //representing the HTML structure for a post:
       // '?' - "if available"
         const postHTML = `
+        <br>
         <fieldset class="post">
           <div class="posthead">
             <table>
@@ -22,6 +23,7 @@ fetch('json/describePost.json')  //allows us to make HTTP requests (like getting
           </div>
           <div class="likeIcon">👍 ${post.likes}</div>
         </fieldset>
+        <br>
       `;
       postsContainer.innerHTML += postHTML; //takes the postHTML we just created and adds it to the main element in the HTML. ("+=" is for avoiding overwriting previous posts.)
     });
