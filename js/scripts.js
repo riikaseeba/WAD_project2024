@@ -104,36 +104,3 @@ fetch('json/describePost.json')  //getting data locally     //Task 5
     document.body.appendChild(footer);
   });
 };
-
-
-
-
-   //This was a lazy way to do that:
-   /*
-    const postsContainer = document.querySelector('main'); //This element serves as the container for all post elements we’ll add.
-    data.posts.forEach(post => { //is a loop that goes through each post in the array.
-      //representing the HTML structure for a post:
-      // '?' - "if available"
-        const postHTML = `
-        <br>
-        <fieldset class="post">
-          <div class="posthead">
-            <table>
-              <tr>
-                <td><img src="${post.profileImage}" alt="profile_picture" width="40" height="40"></td>
-                <td><h1>${post.date}</h1></td>
-              </tr>
-            </table>
-          </div>
-          ${post.postImage ? `<div class="postimg"><img src="${post.postImage}" width="500" height="500" alt="Post image"></div>` : ""}
-          <div class="postcap">
-            ${post.title ? `<h3>${post.title}</h3>` : ""}
-            <p>${post.content}</p>
-          </div>
-          <div class="likeIcon">👍 ${post.likes}</div>
-        </fieldset>
-        <br>
-      `;
-      postsContainer.innerHTML += postHTML; //takes the postHTML we just created and adds it to the main element in the HTML. ("+=" is for avoiding overwriting previous posts.)
-    });
-  });*/
