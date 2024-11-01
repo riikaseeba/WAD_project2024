@@ -53,6 +53,51 @@
         "title": null,
         "content": "Pärnu Beach - Estonia's Summer Capital",
         "likes": 0
+      },
+      {
+        "date": "Aug 10, 2024",
+        "author": "Riika Seeba",
+        "profileImage": "img/Logo.png",
+        "postImage": "img/post06.jpg",
+        "title": "A Day at Lahemaa National Park",
+        "content": "Visited Lahemaa National Park and enjoyed the serene landscapes, lush forests, and beautiful coastline. A perfect escape from the city!",
+        "likes": 0
+      },
+      {
+        "date": "Jul 30, 2024",
+        "author": "Riika Seeba",
+        "profileImage": "img/Logo.png",
+        "postImage": null,
+        "title": "New Cafe in Town!",
+        "content": "Discovered a cozy little cafe near the Town Hall Square. It’s perfect for relaxing with a book and a warm cup of coffee.",
+        "likes": 0
+      },
+      {
+        "date": "Jul 15, 2024",
+        "author": "Riika Seeba",
+        "profileImage": "img/Logo.png",
+        "postImage": "img/post08.jpeg",
+        "title": "Exploring Estonian Art Museum",
+        "content": "Spent the afternoon exploring Estonian Art Museum. The exhibits showcase a fascinating range of local art, both traditional and contemporary.",
+        "likes": 0
+      },
+      {
+        "date": "Jun 25, 2024",
+        "author": "Riika Seeba",
+        "profileImage": "img/Logo.png",
+        "postImage": "img/post09.jpg",
+        "title": null,
+        "content": "Took a refreshing swim at Pirita Beach. The summer weather made it the perfect day to enjoy Estonia’s beautiful coastline.",
+        "likes": 0
+      },
+      {
+        "date": "Jun 5, 2024",
+        "author": "Riika Seeba",
+        "profileImage": "img/Logo.png",
+        "postImage": "img/post10.jpg",
+        "title": "Tallinn Botanic Garden Visit",
+        "content": "Visited the Tallinn Botanic Garden today. Loved the colorful flower arrangements and peaceful walking paths!",
+        "likes": 0
       }
     ]
   }
