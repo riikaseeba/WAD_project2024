@@ -1,4 +1,5 @@
-fetch('json/describePost.json')  //allows us to make HTTP requests (like getting data from a server or loading a file)
+//fetch('json/describePost.json')  //getting data locally
+fetch('https://api.npoint.io/c66f28ce5e4b9b3baf54') //Here we try to retrieve/fetch the posts information from the endpoint (URI)  //task 4
   .then(response => response.json()) //tells JavaScript to parse the JSON data, converting it into a format we can work with in JavaScript (like objects and arrays).
   .then(data => {   //receives the parsed JSON data as data, which we can now use to dynamically create HTML content.
     const postsContainer = document.querySelector('main'); //This element serves as the container for all post elements we’ll add.
