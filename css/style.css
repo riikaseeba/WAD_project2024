@@ -3,13 +3,16 @@
     padding: 0px;
     box-sizing: border-box;
     font-family: sans-serif;
+
 }
 
 body{
     min-height: 100vh;
     margin: 0;
     /*background: url('../img/background.png') no-repeat;*/
-    background-size: cover;
+    background: linear-gradient(135deg, rgba(240, 244, 248, 0.9), rgba(217, 232, 245, 0.9)), url('../img/background-pattern.png'); /* Gradient with overlay */
+    background-size: cover; /* Ensures the image covers the screen */
+    background-attachment: fixed; /* Keeps background fixed while scrolling */
     background-position: center;
     display: flex;
     flex-direction: column;
@@ -20,8 +23,10 @@ header{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 30px 10%;
-    background-color: rgb(87, 125, 80);
+    padding: 20px 10%;
+    background-color: #4a7c59; /* Deep green */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    color: white;
 }
 
 #logo {             /* ID Selector (#)*/
@@ -34,9 +39,8 @@ header{
 
 .navbar ul {
     list-style-type: none;
-    background-color: rgb(87, 125, 80);
-    overflow: hidden;
     padding-left: 0;
+    display: flex;
 }
 
 .navbar a{
@@ -47,9 +51,11 @@ header{
     text-align: center;
     font-weight: bold;
     font-size: 25px;
+    transition: background-color 0.3s ease;
+    border-radius: 6px;
 }
 .navbar a:hover{
-    background-color: rgb(134, 167, 128);
+    background-color:#6c9f77;
     color: black;
 }
 .navbar li{
@@ -72,7 +78,7 @@ main {
 
 .post {
     border: 0px; /* Add border */
-    border-radius: 30px; /* Rounded corners */
+    border-radius: 20px; /* Rounded corners */
     padding: 20px;
     display: flex;
     flex-direction: column;
@@ -83,7 +89,7 @@ main {
 
 .post .posthead h1 {
     font-size: 20px;
-    color: black;
+    color: #4a7c59;
     margin-bottom: 10px;
     margin-left: 150px;
 }
@@ -117,11 +123,10 @@ main {
 
 footer {
     display: block;
-    clear: both;
-    background-color: rgb(87, 125, 80);
+    background-color: #4a7c59;
     text-align: center;
-    padding: 25px;
-
+    padding: 20px;
+    box-shadow: 0px -4px 8px rgba(0, 0, 0, 0.1);
     font-family: sans-serif;
     color: #fff;
 }
@@ -130,25 +135,39 @@ footer {
         position: relative;
         display: inline-block;
         cursor: pointer;
+        order: 3;
+        margin-left: auto;
     }
 
     /* Dropdown menu (hidden by default) */
     .dropdown-content {
         display: none;
         position: absolute;
-        background-color: #f9f9f9;
-        min-width: 160px;
+        right: 0; /* Aligns the dropdown to the right */
+        background-color: #ffffff;
+        min-width: 180px;
+        padding: 10px 0;
+        border-radius: 12px; /* Rounded corners */
         box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
         z-index: 1;
+        
     }
 
     /* Links inside the dropdown */
     .dropdown-content a {
-        color: black;
-        padding: 12px 16px;
+        color: #4a4a4a;
+        padding: 1px 20px;
         text-decoration: none;
         display: block;
+        font-size: 16px;
+        transition: background-color 0.3s ease; /* Smooth hover effect */
+        border-radius: 4px; /* Slight rounding for each link */
     }
+    .dropdown-content a:hover {
+        background-color: #f0f4f8; /* Light background on hover */
+        color: #4a7c59; /* Match with header color */
+    }
+
 
 
     /* Show the dropdown menu on toggle */
@@ -159,7 +178,6 @@ footer {
 /* Media queries for mobile devices */
 @media screen and (max-width: 800px) {
     header{
-        flex-direction: column;
         align-items: center;  
     }
     .navbar {
